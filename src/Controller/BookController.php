@@ -13,8 +13,25 @@ class BookController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('book/index.html.twig', [
-            'controller_name' => 'BookController',
-        ]);
+        return $this->render('book/index.html.twig');
     }
+
+    // Creation d'un livre dans la bdd
+    // Create
+    // ...
+
+
+    // Affiche le détail d'un livre
+    // Read / Retrieve
+    // ... 
+
+
+    // Modifier un livre
+    // Update
+    // ... 
+
+
+    // Supprimer un livre
+    // Delete
+    // ...
 }
