@@ -17,12 +17,18 @@
 
         <header>
             <nav>
-                <a href="{{ url('homepage') }}">Accueil</a>
-                <a href="{{ url('book') }}">Listes de livres</a>
-                <a href="{{ url('contact') }}">Contact</a>
-                <a href="{{ url('faq') }}">FAQ</a>
+                <a href="{{ url('homepage') }}"> <i class="ri-home-2-line"></i> Accueil</a>
+                <a href="{{ url('book') }}"> <i class="ri-book-line"></i> Listes de livres</a>
+                <a href="{{ url('contact') }}"> <i class="ri-contacts-line"></i> Contact</a>
+                <a href="{{ url('faq') }}"> <i class="ri-question-answer-line"></i> FAQ</a>
             </nav>
         </header>
-        {% block body %}{% endblock %}
+
+        <main>
+            <div class="container">
+                {% block body %}{% endblock %}
+            </div>
+        </main>
+        
     </body>
 </html>
